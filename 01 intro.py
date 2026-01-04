@@ -21,4 +21,22 @@ plt.plot(x,y, color="tomato", **line_style)
 plt.plot(x,y2, color="green", **line_style)
 plt.plot(x,y3, **line_style)
 
+# We can add title
+
+title_style = dict(fontsize=20,
+          family="Arial",
+          fontweight="bold",
+          color="gray")
+plt.title("Class size", **title_style)
+
+plt.xlabel("Year", **title_style)
+plt.ylabel("Students", **title_style)
+
+# By default value of x is showing like 2024.00 ......
+# to remove this->
+plt.xticks(x)
+
+# We can also customized the ticks
+plt.tick_params(axis="both", colors="red")
+
 plt.show()
